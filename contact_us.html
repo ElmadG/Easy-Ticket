@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<!-- BEGIN HEAD -->
+<head>
+<title>Easy Ticket</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/contact.css" type="text/css" media="all">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+    $(document).ready(function(){
+        $("form").submit(function(){
+            alert("Thank you for contacting Easy Coach");
+        });
+    });
+    </script>
+</head>
+<body>
+<ul class="topnav">
+  <li><a class="active" href="e_main.html">Home</a></li>
+  <li><a href="how_to_book.html">Bus Reservation Guide</a></li>
+  <li><a href="contact_us.html">Contact Us</a></li>
+  <li class="right"><a href="signup.html">User Registration</a></li>
+  <li class="right"><a href="signup.html">LogIn</a></li>
+
+</ul>
+
+<h3>Kindly Free To Contact Us Incase Of Anything</h3>
+
+<div class="container">
+  <form action="lmadgila@gmail.com" method="post">
+    <label for="fname">Forename</label>
+    <input type="text" id="fname" name="fname" placeholder="Your first name..">
+
+    <label for="lname">Surname</label>
+    <input type="text" id="sname" name="sname" placeholder="Your last name..">
+
+    <label for="town">Town</label>
+    <select id="town" name="town">
+      <option value="nairobi">Nairobi</option>
+      <option value="kisumu">Kisumu</option>
+      <option value="kakamega">Kakamega</option>
+      <option value="mumias">Mumias</option>
+      <option value="mbale">Mbale</option>
+      <option value="bungoma">Bungoma</option>
+      <option value="busia">Busia</option>
+      <option value="homabay">Homabay</option>
+      <option value="narok">Narok</option>
+      <option value="oyugis">Oyugis</option>
+      <option value="siaya">Siaya</option>
+      <option value="sirare">Sirare</option>
+      <option value="usenge">Usenge</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Send Message">
+  </form>
+  <hr>
+         <h3>Our Social Sites</h3>
+         <center>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-instagram"></a>
+         </center>
+
+</div>
+
+</body>
+<footer>Copyright &copy; www.easycoach.co.ke | 2018</footer>
+
+</html>

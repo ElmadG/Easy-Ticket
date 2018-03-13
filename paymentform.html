@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Easy Ticket</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <style type="text/css">
+  	body {font-family: Arial, Helvetica, sans-serif;}
+  	.label-inline {
+    padding:15px;
+	}
+	h4 {color: blue;}
+	hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px dotted grey;
+    margin: 1em 0;
+    padding: 0; 
+	}
+
+	.fa-arrow-circle-left {color: white;}
+	input[type=text] {
+	    width: 100%;
+	    padding: 12px;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    box-sizing: border-box;
+	    
+	    resize: vertical;
+	}
+	input[type=label] {
+	    width: 10%;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    box-sizing: border-box;
+	    
+	    margin-bottom: 16px;
+	    resize: vertical;
+	}
+	.modal-content {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+	}
+	.fa fa-times {
+	  background: blue;
+	  color: black;
+	}
+  </style>
+
+</head>
+<body>
+<br><br><br>
+<div class="container">
+    <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Book Your Seat</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Please Fill In The Below:</h4>
+        </div>
+        <div class="modal-body">
+        	<form class="form-inline" action="payment.php" method="post">
+        		<div class="row1">
+				    <p>
+						<h4>Total Amount </h4>
+				    	<input type="label" input placeholder="2000.00" oninput="this.className = ''" name="amount">
+				    </p>
+				 </div>
+				 <div class="row2">
+				 		<h4><center><i class="fa fa-user" aria-hidden="true"></i>Personal Details:<hr></center></h4>
+				 		<div><center>
+				 			<label class="label-inline">
+		     						 Passanger Name:*<br><input type="text" name="psn" id="psn">
+		   					</label>
+
+		   					<label class="label-inline">
+		     						Nationality*<br>
+		     						<select class="label-inline" name="country" id="country">
+		     						  <option>Kenya</option>
+								      <option>Uganda</option>
+								      <option>Tanzania</option>
+								      <option>Rwanda</option>
+								      <option>Burundi</option>
+								      <option>South Sudan</option>
+								      <option>Other Country</option>
+									</select>
+		   					</label>    
+		   					<label class="label-inline">
+		     						 ID or Passport No*<br><input type="text" name="id" id="id">
+		   					</label>
+				 		</center></div>
+				 </div>
+
+				 <div class="row2">
+				 		<center><h4><i class="fa fa-money"></i>Payment Details:</h4></center><hr>
+				 		<div><center>
+							<label class="label-inline">
+		     						 Mpesa Code:*<br><input type="text" id="mc" name="mc">
+		   					</label>
+				 			<label class="label-inline">
+		     						 Mobile No Used:*<br><input type="text" id="mn" name="mn" placeholder="+254.." >
+		   					</label>
+    						<label class="label-inline">
+		     						 Email Address:*<br><input type="text" id="email" name="email">
+		   					</label>
+				 		</center></div>
+				 </div>
+
+				 <div class="row2">
+				 		<div><center>
+				 			<label class="label-inline">
+		     						 Captcha Code*<br><input type="text" id="cc" name="cc">
+		   					</label>
+
+		   					<label class="label-inline">
+		     						 Enter Captcha Code*<br><input type="text" id="ec" name="ec" placeholder="Type the shown code">
+		   					</label>
+
+		   					<label class="label-inline">
+    						<button type="button" class="btn btn-warning btn-go-back" name="action"><i class="fa fa-arrow-circle-left">Go Back</i></a></button>
+							<button type="submit" class="btn btn-success" id="btn-submit-info" name="action"><i class="fa fa-ticket"></i> Get Tickets</button>
+						</label>
+				 		</center></div>
+				 </div>
+			</form><br>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true">Close</i></button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Easy Ticket</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link href='https://fonts.googleapis.com/css?family=Andika' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+		.form-inline {
+		    padding:15px;
+			}
+	
+		div.container {
+		    width: 100%;
+		    border: 1px solid white;
+		}
+
+		nav {
+		    float: right;
+		    max-width: 40%;
+		    margin: 0;
+		    padding: 1em;
+		}
+
+		article {
+		    margin-right: 170px;
+		    border-right: 3px dashed gray;
+		    padding: 1em;
+		    overflow: hidden;
+		    max-width:60%;
+		}
+
+	</style>
+</head>
+
+<body>
+	
+<ul class="topnav">
+  <li><a class="active" href="e_main.html">Home</a></li>
+  <li><a href="how_to_book.html">Bus Reservation Guide</a></li>
+  <li><a href="contact_us.html">Contact Us</a></li>
+  <li class="right"><a href="signup.html">User Registration</a></li>
+  <li class="right"><a href="login.html">LogIn</a></li>
+</ul>
+
+<div class="container">  
+<nav>
+	<div>
+		  <h1>Welcome To e-Ticket</h1>
+		  <p>This is Easy Coach's online bus ticket booking system. Use the form on your left search for your preferred schedule or choose one schedule from the following list.</p>
+		  	<h4><b>Kindly note the following conditions:</b></h4>
+		 	<li>Ticket is valid for the date and time reserved.</li>
+		   	<li>Children over the age of 3 should have a valid traveling ticket as per NTSA regulation </li>
+		   	<li>Passenger must to be the bus station half-an-hour before departure time.</li>
+		   	<li>Luguage is carried at owner's risk.The company cannot be held responsible for the damage or loss.</li>
+		   	<li>Passangers must board the bus at bus station.</li><br><br>
+   </div>
+
+   <div class="panel-group">
+   <div class="panel panel-default">
+      			<div class="panel-heading"><span style=" color: black;text-shadow: 2px 2px 4px #000000;"><h1>Accepted Payment</h1></span></div>
+    </div>
+    <div class="panel-body">
+      	     <span style=" color: #00ff00;text-shadow: 2px 2px 4px #000000;font-size: 30px;">MPESA PAYBILL NO:1122110</span><br>
+      	     <span style=" color: red;text-shadow: 2px 2px 4px #000000;font-size: 30px">AIRTEL MONEY NO:1122111</span><br>
+    </div>
+    </div>
+</nav>
+
+<article>
+ <form class="form-inline" action="#">
+  <fieldset>
+    <legend><h1>Your Travel Planner</h1></legend>
+		    <label class="radio-inline">
+		      <input type="radio" name="optradio">One Way
+		    </label>
+		    <label class="radio-inline">
+		      <input type="radio" name="optradio">Round Trip
+		    </label><br><br>
+		    
+		    <div class="form-group">
+		    	<label class="label-inline">
+		     		 From:<id="town" name="town">
+		   		</label><br>
+			    <select class="form-control" id="town">
+				      <option>Nairobi</option>
+				      <option>Kisumu</option>
+				      <option>Kakamega</option>
+				      <option>Mumias</option>
+				      <option>Mbale</option>
+				      <option>Bungoma</option>
+				      <option>Busia</option>
+				      <option>Homabay</option>
+				      <option>Narok</option>
+				      <option>Oyugis</option>
+				      <option>Siaya</option>
+				      <option>Sirare</option>
+				      <option>Usenge</option>
+				</select>
+		    </div>
+		    <div class="form-group">
+		    	<label class="label-inline">
+		     		 Departure Date<br><id="d_date" name="d_date">
+		   		</label><br>
+		      <input type="date" class="form-control" id="d_date"  name="d_date">
+		    </div><br><br>
+
+		    <div class="form-group">
+		      <label class="label-inline">
+		     		 To:<id="town" name="town">
+		   		</label><br>
+			    <select class="form-control" id="town">
+				      <option>Nairobi</option>
+				      <option>Kisumu</option>
+				      <option>Kakamega</option>
+				      <option>Mumias</option>
+				      <option>Mbale</option>
+				      <option>Bungoma</option>
+				      <option>Busia</option>
+				      <option>Homabay</option>
+				      <option>Narok</option>
+				      <option>Oyugis</option>
+				      <option>Siaya</option>
+				      <option>Sirare</option>
+				      <option>Usenge</option>
+				</select>
+		    </div>
+		    <div class="form-group">
+		      <label class="label-inline">
+		     		 Return Date<br><id="r_date" name="r_date">
+		   		</label><br>
+		      <input type="date" class="form-control" id="r_date"  name="r_date">
+		    </div><br><br>
+		   
+		    <input type="submit" value="Search">
+
+  </fieldset>
+</form>
+</article>
+<article>
+	<form class="form">
+       <fieldset>
+           <legend>The following are the available departures from your search;</legend>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+       </fieldset>
+   </form>
+</article>
+</div>
+
+</body>
+
+<footer>Copyright &copy; www.easycoach.co.ke | 2018</footer>
+
+</html>
